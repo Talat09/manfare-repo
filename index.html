@@ -223,41 +223,181 @@
           </button>
         </div>
       </section>
-      <section>
-        <form class="mt-5 ms-5 info-form">
-          <label for="name">Name:</label>
-          <input
-            class="Customer-name"
-            type="text"
-            id="name"
-            name="name"
-            required
-          />
+      <section class="check-order">
+        <div>
+          <form class="formItems mt-5">
+            <div class="d-flex mb-5">
+              <div class="nameLabel">
+                <span>Name:</span>
+                <input
+                  class="Customer-name"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="nameLabel ms-2">
+                <span>Phone:</span>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="nameLabel">
+                <span>Email:</span>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="nameLabel ms-2">
+                <span>Address:</span>
+                <input type="text" id="address" name="address" required />
+              </div>
+            </div>
 
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required />
+            <div class="d-flex mt-2">
+              <div class="select-item me-5">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected class="selected">District</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+              <div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Thana</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
 
-          <label for="address">Address:</label>
-          <input type="text" id="address" name="address" required />
+            <div class="nameLabel mt-3">
+              <span>Order Note:</span>
+              <input type="text" name="orderNote" id="" />
+            </div>
+          </form>
+          <div>
+            <h4>Payment Method:</h4>
+            <hr />
+            <div class="d-flex">
+              <div>
+                <input
+                  type="radio"
+                  id="html"
+                  name="fav_language"
+                  value="HTML"
+                />
+                <label for="html">Cash On Delivery</label>
+              </div>
+              <div class="ms-2">
+                <input
+                  type="radio"
+                  id="payonline"
+                  name="fav_language"
+                  value="Pay Online"
+                />
 
-          <label for="district">District:</label>
-          <input type="text" id="district" name="district" required />
+                <label for="css">Pay Online</label>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <label for="thana">Thana:</label>
-          <input type="text" id="thana" name="thana" required />
-
-          <label for="order-note">Order Note:</label>
-          <textarea
-            class="w-25 mt-2"
-            id="order-note"
-            name="order-note"
-          ></textarea>
-        </form>
+        <div class="order">
+          <h1>ORDER OVERVIEW</h1>
+          <hr />
+          <p>YOUR CART:3 ITEMS</p>
+          <hr />
+          <div class="">
+            <div class="cart mb-2">
+              <img
+                src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+              />
+              <div class="cart-info">
+                <p>Premium Quality T-Shirt For Men</p>
+                <p>TK. 450 <span></span>TK.550</p>
+                <p>Size: M</p>
+              </div>
+            </div>
+            <div class="cart mb-2">
+              <img
+                src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+              />
+              <div class="cart-info">
+                <p>Premium Quality T-Shirt For Men</p>
+                <p>TK. 450 <span></span>TK.550</p>
+                <p>Size: M</p>
+              </div>
+            </div>
+            <div class="cart mb-2">
+              <img
+                src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+              />
+              <div class="cart-info">
+                <p>Premium Quality T-Shirt For Men</p>
+                <p>TK. 450 <span></span>TK.550</p>
+                <p>Size: M</p>
+              </div>
+            </div>
+            <p>SUBTOTAL:$500</p>
+            <hr />
+            <p>DELIVERY CHARGES:$100</p>
+            <hr />
+            <p>TOTAL: $600</p>
+            <div>
+              <p>Have a cupon promo code?</p>
+              <div class="d-flex">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="cupon code here"
+                />
+                <button class="ms-2">APPLY</button>
+              </div>
+              <button class="mt-2">PLACE ORDER</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer bg-light">
+      <div>
+        <img src="./image/logo.png" alt="" />
+        <p>+880 96069999444</p>
+        <p>Worktime: SAT-FRI-11PM</p>
+        <div class="d-flex footer-icons">
+          <img class="ms-2" src="./icons/facebook.png" alt="" />
+          <img class="ms-2" src="./icons/instagram.png" alt="" />
+          <img class="ms-2" src="./icons/whatsapp.png" alt="" />
+        </div>
+      </div>
+      <div>
+        <img src="./image/logo.png" alt="" />
+        <p>+880 96069999444</p>
+        <p>Worktime: SAT-FRI-11PM</p>
+        <div class="d-flex footer-icons">
+          <img class="ms-2" src="./icons/facebook.png" alt="" />
+          <img class="ms-2" src="./icons/instagram.png" alt="" />
+          <img class="ms-2" src="./icons/whatsapp.png" alt="" />
+        </div>
+      </div>
+      <div>
+        <img src="./image/logo.png" alt="" />
+        <p>+880 96069999444</p>
+        <p>Worktime: SAT-FRI-11PM</p>
+        <div class="d-flex footer-icons">
+          <img class="ms-2" src="./icons/facebook.png" alt="" />
+          <img class="ms-2" src="./icons/instagram.png" alt="" />
+          <img class="ms-2" src="./icons/whatsapp.png" alt="" />
+        </div>
+      </div>
+    </footer>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/00cd598fea.js"
